@@ -15,10 +15,15 @@
       <button class="button">Boom?</button>
     </div>
     <div class="image">
-      <img src="">
+      <img src="images/favicon.ico">
     </div>
     <script>
-      document.querySelector('.image').addEventListener('click', 
+      document.querySelector('.image').addEventListener('click', reziseImage)
+      function resizeImage() {
+        let image = document.querySelector('.image');
+        image.width += image.width;
+        image.height += image.height;
+      }
     </script>
   </body>
 </html>
